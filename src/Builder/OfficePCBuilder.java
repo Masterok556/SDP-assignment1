@@ -3,6 +3,11 @@ package Builder;
 import Product.PC;
 
 public class OfficePCBuilder extends PCBuilder {
+
+    public OfficePCBuilder() {
+        this.ram = 8;
+        this.storage = 256;
+    }
     @Override
     public PC build() {
         validate();

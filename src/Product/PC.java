@@ -15,4 +15,9 @@ public class PC {
         this.PCcase = PCcase;
     }
 
+
+    @Override
+    public String toString(){
+        return ("PC [CPU:"+cpu+", GPU:"+gpu+", RAM:"+ram+", Storage:"+storage+", Case:"+PCcase+"]");
+    }
 }

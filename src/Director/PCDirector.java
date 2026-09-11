@@ -8,17 +8,17 @@ import Product.PC;
 public class PCDirector {
     public PC buildGamingPC(){
         return new GamingPCBuilder()
-                .setCPU("Intel i7")
+                .setCPU("Intel I7")
                 .setGPU("RTX 5050")
-                .setRAM(32)
-                .setStorage(2048)
+                .setRAM(16)
+                .setStorage(1024)
                 .setCase("RGB cool case")
                 .build();
     }
 
     public PC buildOfficePC(){
         return new OfficePCBuilder()
-                .setCPU("intel i5")
+                .setCPU("Intel I5")
                 .setGPU("Integrated")
                 .setRAM(8)
                 .setStorage(512)

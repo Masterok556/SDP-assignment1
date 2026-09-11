@@ -4,6 +4,11 @@ import Product.PC;
 
 public class GamingPCBuilder extends PCBuilder {
 
+    public GamingPCBuilder() {
+        this.ram = 16;
+        this.storage = 1024;
+    }
+
     @Override
     public PC build() {
         validate();
