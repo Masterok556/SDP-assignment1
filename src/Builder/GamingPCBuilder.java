@@ -14,6 +14,12 @@ public class GamingPCBuilder extends PCBuilder {
             );
         }
 
+        if (storage < 1024){
+            throw new IllegalStateException(
+                    "Gaming PC requires at least 1 TB of storage"
+            );
+        }
+
         return new PC(cpu, gpu, ram, storage, PCcase);
     }
 }

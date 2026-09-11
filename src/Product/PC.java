@@ -12,7 +12,7 @@ public class PC {
         this.gpu = gpu;
         this.ram = ram;
         this.storage = storage;
-        this.PCcase=PCcase;
+        this.PCcase = PCcase;
     }
 
 }

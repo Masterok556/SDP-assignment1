@@ -30,6 +30,11 @@ public abstract class PCBuilder {
         return this;
     }
 
+    public PCBuilder setCase(String pccase){
+        this.PCcase = pccase;
+        return this;
+    }
+
     protected void validate() {
         boolean isInvalid = (
                         cpu == null || cpu.isEmpty()
