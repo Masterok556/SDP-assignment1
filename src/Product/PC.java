@@ -18,6 +18,6 @@ public class PC {
 //  basic toString for easy printing
     @Override
     public String toString(){
-        return ("PC [CPU:"+cpu+", GPU:"+gpu+", RAM:"+ram+", Storage:"+storage+", Case:"+PCcase+"]");
+        return ("PC [CPU:"+cpu+", GPU:"+gpu+", RAM:"+ram+" GB, Storage:"+storage+", Case:"+PCcase+"]");
     }
 }
