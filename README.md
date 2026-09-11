@@ -18,5 +18,3 @@ PC gamingPC = new GamingPCBuilder()
 ```
 
 The builder automatically uses the default RAM and storage values for both gaming and office PC.
-
-Made by Tileu-Kabyl Tole SE-2528
