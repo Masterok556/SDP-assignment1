@@ -12,6 +12,7 @@ public class Main{
         PC defaultOffice = director.buildOfficePC();
 
         PC customGaming = new GamingPCBuilder()
+//                did not add ram and storage to check default values
                 .setGPU("Ultra RTX 9090")
                 .setCPU("Intel i96 mega ultra pro 9999 cores")
                 .setCase("Ultra cool neon RGB with water cooling system ")

@@ -3,7 +3,7 @@ package Builder;
 import Product.PC;
 
 public class GamingPCBuilder extends PCBuilder {
-
+//    default values for Gaming PC
     public GamingPCBuilder() {
         this.ram = 16;
         this.storage = 1024;
@@ -13,6 +13,7 @@ public class GamingPCBuilder extends PCBuilder {
     public PC build() {
         validate();
 
+//        checking minimum required values for gameing PC
         if (ram < 16) {
             throw new IllegalStateException(
                     "Gaming PC requires at least 16 GB RAM"

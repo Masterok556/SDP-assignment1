@@ -6,6 +6,8 @@ import Builder.PCBuilder;
 import Product.PC;
 
 public class PCDirector {
+
+//    default Gaming PC set
     public PC buildGamingPC(){
         return new GamingPCBuilder()
                 .setCPU("Intel I7")
@@ -15,7 +17,7 @@ public class PCDirector {
                 .setCase("RGB cool case")
                 .build();
     }
-
+//  default Office PC Set
     public PC buildOfficePC(){
         return new OfficePCBuilder()
                 .setCPU("Intel I5")

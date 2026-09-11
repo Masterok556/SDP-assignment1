@@ -36,6 +36,7 @@ public abstract class PCBuilder {
     }
 
     protected void validate() {
+//        checking values
         boolean isInvalid = (
                         cpu == null || cpu.isEmpty()
                         || gpu == null || gpu.isEmpty()
