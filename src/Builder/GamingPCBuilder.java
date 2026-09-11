@@ -6,11 +6,12 @@ public class GamingPCBuilder extends PCBuilder {
 
     @Override
     public PC build() {
-        boolean isInvalid = (cpu == null || gpu == null || PCcase ==null || storage<0
-                            ||cpu.isEmpty() || gpu.isEmpty() ||PCcase.isEmpty()
-        );
-        if (isInvalid) {
-            throw new IllegalStateException("");
+        validate();
+
+        if (ram < 16) {
+            throw new IllegalStateException(
+                    "Gaming PC requires at least 16 GB RAM"
+            );
         }
 
         return new PC(cpu, gpu, ram, storage, PCcase);

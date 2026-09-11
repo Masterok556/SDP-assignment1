@@ -30,5 +30,17 @@ public abstract class PCBuilder {
         return this;
     }
 
+    protected void validate() {
+        boolean isInvalid = (
+                        cpu == null || cpu.isEmpty()
+                        || gpu == null || gpu.isEmpty()
+                        || PCcase == null || PCcase.isEmpty()
+                        || storage < 0 || ram < 0
+        );
+        if (isInvalid) {
+            throw new IllegalStateException("Invalid PC configuration");
+        }
+    }
+
     public abstract PC build();
 }
