@@ -18,3 +18,15 @@ PC gamingPC = new GamingPCBuilder()
 ```
 
 The builder automatically uses the default RAM and storage values for both gaming and office PC.
+
+# How to use
+In main.java, inside the main method, you may use `PC defaultOffice = director.buildOfficePC();` or create custom PC directly:
+```
+PC customOffice = new OfficePCBuilder()
+        .setGPU("Boring integrated gpu")
+        .setCPU("Intel i1 with 1 core")
+        .setStorage(512)
+        .setCase("Boring black case very big")
+        .build();
+```
+And you can print any PC to see its components: `System.out.println(customOffice);`
